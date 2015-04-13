@@ -22,115 +22,198 @@
 
         <!--Header-->
         <div data-role="header" data-position="fixed">
-            <h1>Home!</h1>
+            <h1>Transplant Protocols</h1>
         </div>
 
         <!--Content-->
-        <div data-role="content">
-            <h1>Welcome to Telerik AppBuilder!</h1>
-            <p>
-                Telerik AppBuilder&trade; enables you to build cross-platform device applications regardless of your
-                    development platform by combining the convenience of a local development toolset with the
-                    power and flexibility of the cloud.
-            </p>
-        </div>
         <div class="nav">
-            <ul data-role="listview">
-                <li>
-                    <a href="#page-ui-interaction" data-transition="slide">UI Interaction Example</a>
-                </li>
-                <li>
-                    <a href="#page-location" data-transition="slide">Location Example</a>
-                </li>
-            </ul>
+            <img src="images\heart.jpg" />            
+            <img src="images\lungs.jpg" />
+            <br/>
+            <a href="#page-kidneys" data-transition="slide"><img src="images\kidneys.jpg" /></a>
+            <img src="images\liver.jpg" />
         </div>
 
         <!--Footer-->
         <div data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">Built with Telerik AppBuilder&trade;</span>
+            <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
         </div>
 
     </div>
 
     <!--UI interaction-->
-    <div id="page-ui-interaction" data-role="page" data-add-back-btn="true">
-
-        <!--Header-->
-        <div data-role="header" data-position="fixed">
-            <h1>Login</h1>
-        </div>
+    <div id="page-kidneys" data-role="page" data-title="Kidney Transplants">
 
         <!--Content-->
         <div data-role="content">
             <div id="login-wrap">
-                <form data-ajax="false" id="login-form">
-                    <h3 id="login-text">Enter your credentials:</h3>
-                    <div>
-                        <input id="login-username" type="text" placeholder="Username" />
-                        <input id="login-password" type="password" placeholder="Password" />
-                    </div>
-
-                    <div class="buttons ui-bar">
-                        <div>
-                            <div class="left">
-                                <input type="submit" id="login" data-icon="check" data-inline="true" class="left" value="Login" />
-                            </div>
-                            <div class="right">
-                                <button id="login-reset" data-icon="delete" data-inline="true" class="right">Reset</button>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </form>
+                <h2>
+                   <a href="#page-home" data-align="left"><img src="images\back3.jpg" /></a>Kidney Transplants
+                </h2>
             </div>
-
-            <div id="logout-wrap">
-                <div>
-                    <h1 class="welcome">Welcome, <span id="logout-username"></span>!
-                    </h1>
-                </div>
-
-                <div class="buttons">
-                    <div data-role="controlgroup" data-type="horizontal">
-                        <button id="logout" data-icon="back">Logout</button>
-                    </div>
-                </div>
+            <div class="nav">
+               <ul data-role="listview">
+                   <li>
+                   <a href="#page-PreTransplantPhase" data-align="left">Pre-transplant Phase</a>
+                   </li>
+                   <li>
+                       Transplant Admission
+                   </li>
+                   <li>
+                       Post-transplant Phase
+                   </li>
+                   <li>
+                       Research Protocols  
+                   </li>                            
+                </ul>
+            </div>
+            <div>
+                   
             </div>
         </div>
 
         <!--Footer-->
         <div data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">Built with Telerik AppBuilder&trade;</span>
+            <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
         </div>
 
     </div>
 
-    <!--Location-->
-    <div id="page-location" data-role="page" data-add-back-btn="true">
-
-        <!--Header-->
-        <div id="page-location-header" data-role="header" data-position="fixed">
-            <h1>Location</h1>
+    <!--Kidney Transplants page-->
+    <div id="page-PreTransplantPhase" data-role="page" data-title="Kidney Transplants">
+        <div>
+            <h2>
+                Kidney Transplants
+            </h2>
         </div>
-
+        <br/>
         <!--Content-->
         <div id="page-location-content" data-role="content">
-            <div id="map-search-wrap">
-                <a id="map-navigate-home"></a>
-                <form data-ajax="false" onsubmit="return false;">
-                    <input id="map-address" type="search" data-role="none" placeholder="Address" />
-                    <input id="map-search" type="submit" value="" data-role="none" />
-                </form>
-            </div>
-            <div id="map-canvas"></div>
+             <a href="#page-kidneys" data-align="left"><img src="images\back3.jpg" /></a>Pre-transplant Phase
         </div>
-
+                <div class="nav">
+                    <ul data-role="listview">
+                        <li>
+                            <a href="#page-CMS" data-align="left">CMS requirements</a>
+                        </li>
+                        <li>
+                            <a href="#page-Coordinator" data-align="left">Coordinator listing checklist</a>                                               
+                        </li>
+                        <li>
+                            <a href="#page-Calculators" data-align="left">Calculators</a>                                                              
+                        </li>
+                    </ul>
+                </div>
+        <div id="page-location-content_1" data-role="content">
+             <h4>Transplant Admission</h4>
+             <h4>Post-transplant Phase</h4>
+             <h4>Research Protocols</h4>            
+        </div>        
         <!--Footer-->
         <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
-            <span class="footerText">Built with Telerik AppBuilder&trade;</span>
+            <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
         </div>
 
     </div>
+   
+    <!--CMS requirements page-->
+    <div id="page-CMS" data-role="page" data-title="Kidney Transplants">
+        <div>
+            <h2>
+                Kidney Transplants
+            </h2>
+        </div>
+        <div>
+            <h2>
+                Pre-transplant Phase
+            </h2>           
+        </div>
+        <!--Content-->
+        <div data-role="content">
+             <a href="#page-PreTransplantPhase" data-align="left"><img src="images\back3.jpg" /></a>CMS requirements
+        </div>
+        <!--Footer-->
+        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
+        </div>
+
+    </div>    
+    
+    <!--Coordinator listing page-->
+    <div id="page-Coordinator" data-role="page" data-title="Kidney Transplants">
+        <div>
+            <h2>
+                Kidney Transplants
+            </h2>
+        </div>
+        <div>
+            <h2>
+                Pre-transplant Phase
+            </h2>           
+        </div>
+        <!--Content-->
+        <div data-role="content">
+             <a href="#page-PreTransplantPhase" data-align="left"><img src="images\back3.jpg" /></a>Coordiantor listing checklist
+             <div>
+                 <h4>
+                     Consults
+                 </h4>
+                 <ul>
+                     <li>
+                         Dental,Psychiatry,Social support, Pharmacy,Nutrition
+                     </li>
+                 </ul>
+                 <h4>
+                     Testing
+                 </h4>
+                 <ul>
+                     <li>
+                         EKG,x-ray,Stress test,PSA,Quantiferon gold,Urine culture
+                     </li>
+                 </ul>   
+                 <h4>
+                     Procedures
+                 </h4>
+                 <ul>
+                     <li>
+                         Colonoscopy,Mammogram,Pap Smear
+                     </li>
+                 </ul>
+                 <h4>
+                     Documentation
+                 </h4>                
+            </div>
+        </div>
+        <!--Footer-->
+        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
+        </div>
+
+    </div>                                              
+
+    <!--Calculators page-->
+    <div id="page-Calculators" data-role="page" data-title="Kidney Transplants">
+        <div>
+            <h2>
+                Kidney Transplants
+            </h2>
+        </div>
+        <div>
+            <h2>
+                Pre-transplant Phase
+            </h2>           
+        </div>
+        <!--Content-->
+        <div data-role="content">
+             <a href="#page-PreTransplantPhase" data-align="left"><img src="images\back3.jpg" /></a>Calculators
+        </div>
+        <!--Footer-->
+        <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
+            <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
+        </div>
+
+    </div>     
+    
     <script type="text/javascript">
         document.addEventListener('deviceready', function () {
             navigator.splashscreen.hide();

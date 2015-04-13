@@ -6,7 +6,7 @@
   "AppIdentifier": "com.telerik.samplejquerymobile",
   "DisplayName": "sample-jquery-mobile",
   "Author": "",
-  "Description": "",
+  "Description": "sample-jquery-mobile",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -18,8 +18,8 @@
   "WP8Publisher": "",
   "WP8Capabilities": [],
   "WP8Requirements": [],
-  "WP8PublisherID": "",
-  "WP8ProductID": "",
+  "WP8PublisherID": "{ea0f8845-8657-4336-a73b-ce597115a669}",
+  "WP8ProductID": "{4c8e3dad-854b-48a9-a229-8096fbc38266}",
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.5.0",
   "CorePlugins": [
@@ -75,5 +75,7 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "Framework": "Cordova"
+  "Framework": "Cordova",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.telerik.samplejquerymobile"
 }

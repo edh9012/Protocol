@@ -3,10 +3,10 @@
   "IsRunnable": "true",
   "ProjectGuid": "21e93c3b-225c-4a1d-b439-144cea9c0e34",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.samplejquerymobile",
-  "DisplayName": "sample-jquery-mobile",
-  "Author": "",
-  "Description": "sample-jquery-mobile",
+  "AppIdentifier": "com.telerik.NYPprotocol",
+  "DisplayName": "NYP Protocols",
+  "Author": "edh9012",
+  "Description": "Protocol Application",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -68,7 +68,7 @@
     "Portrait",
     "Landscape"
   ],
-  "AndroidHardwareAcceleration": "false",
+  "AndroidHardwareAcceleration": "False",
   "iOSStatusBarStyle": "Default",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",

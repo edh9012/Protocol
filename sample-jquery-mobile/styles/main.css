@@ -171,11 +171,11 @@
 
 .section-header-h2
 {
-    height:15px;
+
     align:center; 
     font-family:Calibri; 
     text-shadow:none; 
-    font-size:20px; 
+    font-size:24px; 
     color:white;
     padding-bottom:10px;
 }
@@ -195,13 +195,13 @@
     align:center; 
     font-family:Calibri; 
     text-shadow:none; 
-    font-size:24px; 
+    font-size:20px; 
     color:#9F9F9F;
 }
 
 #PTP ul li a.selected-section,
 #PTP ul li.listview-item-1,
-#pretransplant2 ul li.listview-item-2
+#pretransplant2 ul li.item-2
 {
     background-color:#CC5C5C; 
     font-family:Calibri; 
@@ -209,8 +209,10 @@
     text-shadow:none;
 }
 
+
 #PTP ul li a.selected-section:before,
-#PTP ul li.listview-item-1:before
+#PTP ul li.listview-item-1:before,
+#pretransplant2 ul li.item-2:before
 {
     content: "\a0\a0\a0\a0\a0\a0"
 }
@@ -223,11 +225,12 @@
     text-shadow:none;
 }
 
-#pretransplant2 ul li.listview-item-2:before,
 #pretransplant ul li a.listview-subitem:before
 {
-    content: "\a0\a0\a0\a0\a0\a0"
+    content: "\a0\a0\a0\a0\a0\a0\a0\a0"
 }
+
+
 
 .selected-content 
 {
@@ -252,4 +255,9 @@
     text-shadow:none;    
     vertical-align:top;
     padding-left: 20px;
+}
+
+.selected-content p:before
+{
+    content: "\a0\a0\a0\a0\a0\a0"    
 }

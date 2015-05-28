@@ -10,20 +10,64 @@
     <script src="cordova.js" type="text/javascript"></script>
     <script src="jquery-mobile/js/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="jquery-mobile/js/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>  
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
         setTimeout(function(){
         document.location = "#page-home";
-        }, 2500);
-    </script>   
-    <script type="text/css">--> 
+        }, 2500);         
+    </script>  
+    <script type="text/javascript">
+        
+    </script>          
+    <script type="application/javascript"> 
    
-    </script>
+    function loadProtocolData() {     
+    	$.ajax({
+           //url: "http://teams13dev.nyp.org/sites/Clinical/Protocols/_api/web/lists/getbytitle('App Structure')/Items?$select=Title&$filter=Level eq '0'",                        
+           url: "https://api.forecast.io/forecast/79329e763dde0773ac6b522bd84bd127/37.8267,-122.423",
+           //url: "http://teams13dev.nyp.org/sites/IT/Demo/_vti_bin/Lists.asmx",
+           //crossDomain: true,
+           //username: 'edh9012',
+           //password: 'Atf0859ea',
+           //xhrFields: {
+           //    withCredentials: true
+           //},
+		   //async: false,
+           //beforeSend: function (xhr) {
+           //    xhr.setRequestHeader('Authorization', ('NYH\\edhd9012', 'Atf0859ea'));
+           //},
+
+           type: "GET",
+           headers: {"accept": "application/json;odata=verbose"}, 
+           success: function (data) { 
+               console.log(data);
+               $("#current_temp").html(Math.round(data.currently.temperature)+"&#176;F");
+               $("#current_summary").html(data.currently.summary);
+               $("#current_location").html("Los Angeles");
+           },           
+           error: function (xhr) {   
+               console.log(xhr.message);
+           }
+           //contentType: "application/json",
+           //dataType: 'jsonp',
+           //success: function(json){
+           //    console.log(json);
+           //},
+           //error: function(e) {
+           //    console.log(e.message);
+           //}            
+        });
+    }  
+	$(document).ready(function(){
+		loadProtocolData();
+	});        
+    </script>      
+
     </head>
 <body>
-    <!--Splash Screen   
+    <!--Splash Screen-->
     <div id="page-splash" data-role="page">        
         <a href="#page-home" data-transition="slide"><img src="images\Protocol_Splash.jpg" /></a>   
-    </div> --> 
+    </div>  
     
     <!--Home-->
     <div id="page-home" data-role="page">
@@ -31,7 +75,7 @@
         <!--Header-->
         <div id="TP" align="center">
             <h3 class="tp-home">Transplant Protocols</h3>
-        </div>
+        </div>  
 
         <!--Content-->
         <div class="nav" style="padding-left:45px">
@@ -51,12 +95,10 @@
         <div data-role="footer" data-position="fixed" data-id="oneFooter">
             <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
         </div>
-
     </div>
 
     <!--UI interaction-->
     <div id="page-kidneys" data-role="page" data-title="Kidney Transplants">
-
         <!--Content-->
         <div data-role="content">
             <div align="center" class="section-header">
@@ -85,24 +127,23 @@
     </div>
 
     <!--Kidney Transplants page-->
-    <div id="page-PreTransplantPhase" data-role="page" data-title="Kidney Transplants">
+    <div id="page-PreTransplantPhase" data-role="page" data-title="Kidney Transplants">        
         <div align="center" class="section-header">
             <h2 class="section-header-h2">
                 Kidney Transplants
             </h2>
         </div>
-            <div id="PreTransplantPhase" class="nav" data-role="content">
+         <div id="PreTransplantPhase" class="nav" data-role="content">
             <ul data-role="listview">
                 <li style="height:30px">
                      <a href="#page-kidneys" data-align="left" class="selected-section"><img src="images\back2.jpg" />&nbsp;Pre-transplant Phase</a>
-                </li>
+                </li>  
             </ul>                
-            </div>
-
+        </div>
       <br/>
         <!--Content-->
         <div id="pretransplant">
-            <ul data-role="listview" >
+            <ul data-role="listview">              
                 <li><a href="#page-CMS" data-align="left" class="listview-subitem">CMS requirements</a></li>
                 <li><a href="#page-Coordinator" data-align="left" class="listview-subitem">Coordinator listing checklist</a></li>
                 <li><a href="#page-Calculators" data-align="left" class="listview-subitem">Calculators</a></li>
@@ -111,25 +152,27 @@
            
         <div id="pretransplant2" data-role="content">            
             <ul data-role="listview">
-             <li class="listview-item-2">Transplant Admission</li>
-             <li class="listview-item-2">Post-transplant Phase</li>
-             <li class="listview-item-2">Research Protocols</li>   
+             <li class="item-2">Transplant Admission</li>
+             <li class="item-2">Post-transplant Phase</li>
+             <li class="item-2">Research Protocols</li>   
             </ul>
         </div>        
         <!--Footer-->
         <div id="page-location-footer" data-role="footer" data-position="fixed" data-id="oneFooter">
             <span class="footerText">Copyright&copy;NewYork-Presbyterian Hospital</span>
         </div>  
-    </div>
-   
+
+    </div>   
     <!--CMS requirements page-->
     <div id="page-CMS" data-role="page" data-title="Kidney Transplants">
         <div align="center" class="section-header">
-            <h2 class="section-header-h2">Kidney Transplants</h2>
-            <h2 class="sub-section-header-h2">Pre-transplant Phase</h2>           
+            <h2 class="section-header-h2">Kidney Transplants</h2>                 
         </div>
+        <div align="center">
+            <h2 class="sub-section-header-h2">Pre-transplant Phase</h2>     
+        </div>         
         <!--Content-->
-            <div class="selected-content">
+        <div class="selected-content">
             <a href="#page-PreTransplantPhase"><img src="images\back3.jpg" /></a><span class="selected-content-title">CMS requirements</span>
         </div>
         <!--Footer-->
@@ -142,12 +185,10 @@
     <!--Coordinator listing page-->
     <div id="page-Coordinator" data-role="page" data-title="Kidney Transplants">
         <div align="center" class="section-header">
-            <h2 class="section-header-h2">
-                Kidney Transplants
-            </h2>
-            <h2 class="sub-section-header-h2">
-                Pre-transplant Phase
-            </h2>           
+            <h2 class="section-header-h2">Kidney Transplants </h2>
+        </div>
+        <div align="center">            
+            <h2 class="sub-section-header-h2">Pre-transplant Phase</h2>           
         </div>
         <!--Content-->
         <div data-role="content">
@@ -180,12 +221,21 @@
     <!--Calculators page-->
     <div id="page-Calculators" data-role="page" data-title="Kidney Transplants">
         <div align="center" class="section-header">
-            <h2 class="section-header-h2"></h2>
+            <h2 class="section-header-h2">Kidney Transplants </h2>
+        </div>
+        <div align="center">            
             <h2 class="sub-section-header-h2">Pre-transplant Phase</h2>           
         </div>
         <!--Content-->
-        <div class="selected-content">
+        <div data-role="content" class="selected-content">
              <a href="#page-PreTransplantPhase"><img src="images\back3.jpg" /></a><span class="selected-content-title">Calculators</span>
+			 <h3>
+                 <p id="current_temp"></p>
+                 <p id="current_summary"></p>
+                 <p id="current_location"></p>
+            </h3>
+     
+
         </div>
         
         <!--Footer-->
@@ -198,6 +248,7 @@
     <script type="text/javascript">
         document.addEventListener('deviceready', function () {
             navigator.splashscreen.hide();
+            loadProtocolData();
         }, false);
     </script>  
     

@@ -1,0 +1,57 @@
+{
+  "ProjectName": "Protocol-mobile",
+  "IsRunnable": "true",
+  "ProjectGuid": "21e93c3b-225c-4a1d-b439-144cea9c0e34",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.NYPprotocol",
+  "DisplayName": "NYP Protocols",
+  "Author": "edh9012",
+  "Description": "Protocol Application displays data from Sharepoint.",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{ea0f8845-8657-4336-a73b-ce597115a669}",
+  "WP8ProductID": "{4c8e3dad-854b-48a9-a229-8096fbc38266}",
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "CorePlugins": [
+    "com.telerik.mobiletesting",
+    "com.telerik.plugin.eqatecanalytics",
+    "org.apache.cordova.device",
+    "org.apache.cordova.inappbrowser",
+    "org.apache.cordova.network-information",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar"
+  ],
+  "AndroidPermissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.BROADCAST_STICKY",
+    "android.permission.CAMERA",
+    "android.permission.INTERNET",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "False",
+  "iOSStatusBarStyle": "Default",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "Framework": "Cordova",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.telerik.samplejquerymobile",
+  "CordovaPluginVariables": {}
+}
